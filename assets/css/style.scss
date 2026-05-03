@@ -1,0 +1,70 @@
+--- 
+--- 
+
+@import "{{ site.theme }}";
+
+:root {
+    --color-bg-default: #0d1117;
+    --color-bg-inset: #010409;
+    --color-fg-default: #c9d1d9;
+    --color-fg-muted: #8b949e;
+    --color-border-default: #30363d;
+    --color-accent-fg: #58a6ff;
+    --color-btn-bg: #21262d;
+    --color-btn-text: #c9d1d9;
+}
+
+body {
+    background-color: var(--color-bg-default);
+    color: var(--color-fg-default);
+}
+
+a {
+    color: var(--color-accent-fg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-fg-default);
+}
+
+code,
+pre,
+blockquote {
+    background-color: var(--color-bg-inset);
+    border-color: var(--color-border-default);
+}
+
+table {
+    background-color: var(--color-bg-default);
+    color: var(--color-fg-default);
+    border-color: var(--color-border-default);
+}
+
+th,
+td {
+    background-color: var(--color-bg-default);
+    border-color: var(--color-border-default);
+    color: var(--color-fg-default);
+}
+
+th {
+    background-color: var(--color-bg-inset);
+}
+
+tr:nth-child(even) td {
+    background-color: var(--color-bg-inset);
+}
+
+.Label,
+.label,
+mark,
+.badge {
+    background-color: var(--color-btn-bg) !important;
+    color: var(--color-btn-text) !important;
+    border-color: var(--color-border-default) !important;
+}
